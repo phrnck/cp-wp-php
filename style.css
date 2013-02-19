@@ -1,0 +1,879 @@
+/*  Cottage Place  
+//    01-2010
+//      frank webster
+//  	  redroosterdesign
+//  	    redrooster.us */
+html {
+	background: #f0eca3 url(images/birch-bkg-yell-overlay.jpg) repeat fixed;
+}
+body {
+	height: 100%;
+	margin: 0 auto 0 auto;
+	padding: 0 0 0 0;
+	font-family: Georgia, Times, serif;
+}
+img {
+	border: none;
+	vertical-align: middle;
+}
+h1, h2, h3, h4, h5, h6, p {
+	padding-left: 10px;
+	padding-right: 26px;
+	margin: 0;
+}
+#wrapper {
+	margin: 10px auto 16px auto;
+	padding: 8px 0 10px 7px;
+	width: 850px; /*842px*/
+	background-color: #fff;
+	box-shadow: 0px 0px 10px 2px #888;
+	border-radius: 8px;
+}
+#header {
+	background: #fff url(images/hdr-arch-bg-2.png) no-repeat 0 0;
+	/*width: 842px;*/
+	height: 270px;
+	position: relative;
+}
+#header #logo img {
+	position: absolute;
+	left: 78px;
+	top: 50px;
+}
+#header h1 {
+	position: absolute;
+	text-indent: -9999px;
+	font-size: 10px;
+}
+/* ------------------------------------ */
+/* NAVIGATION  */
+/* ------------------------------------ */
+#nav {
+	margin: 0 0 0 1px;
+	padding: 0;
+	width: 840px;
+	height: 58px;
+	border-top: 2px solid #edc057;
+	border-bottom: 2px solid #edc057;
+	position: absolute;
+	bottom: 0;
+	background: url(images/ornament-top-left.png) no-repeat 0 0, url(images/ornament-top-right.png) no-repeat top right, url(images/ornament-bottom-left.png) no-repeat bottom left, url(images/ornament-bottom-right.png) no-repeat bottom right;
+}
+#nav ul.mainNav {
+	margin: 6px 0 0 0;
+	padding: 0;
+	height: 24px;
+	text-align: center;
+}
+#nav ul.mainNav li {
+	display: inline;
+	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #754c24;	/* brown */
+	list-style-type: none;
+}
+#nav ul.mainNav li a {
+	padding: 5px 14px 7px 14px;
+	text-decoration: none;
+	color: #754c24;
+	text-shadow: 0 0 2px #cdb9a6; /* 754c24 nav brown */
+}
+#nav ul.mainNav li a:hover {
+	color: #e3872b; /* orange */
+}
+#nav ul.mainNav li a.currentPage {
+	color: #e3872b;
+	background: url(images/nav-arrow.png) no-repeat 50% bottom;
+}
+#nav ul.mainNav li a.currentPage_noSubNav {
+	color: #e3872b;
+	background: none;
+}
+/* ------------------------------------ */
+/* SUB-NAV  */
+/* ------------------------------------ */
+#nav ul.subNav {
+	float: left;
+	width: 840px;
+	height: 38px;
+	margin: 0 1px 0 1px;
+	padding: 0;
+	list-style: none;
+}
+/*#nav ul.subNav {
+	float: left;
+	padding: 0;
+	list-style: none;
+}*/
+#nav ul.subNav.home {
+	margin: 0 0 0 40px;
+}
+#nav ul.subNav.accomm {
+	padding: 0 0 0 70px;
+}
+#subNav ul.subNavSpecial {
+	margin: 0 0 0 280px;
+}
+#subNav ul.subNavReserv {
+	margin: 0 0 0 392px;
+}
+#subNav ul.subNavWhatToDo {
+	margin: 0 0 0 450px;
+}
+#nav ul.subNav li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	border-top: 1px solid #e49f00;
+	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold; /* color: #9a6530; */
+}
+#nav ul.subNav li a {
+	float: left;
+	margin: 0;
+	padding: 5px 10px 4px 10px;
+	text-decoration: none;
+	color: #9a6530; /* subNav lighter brown */
+	text-shadow: 0 0 2px #cdb9a6; /* 754c24 nav brown */
+}
+#nav ul.subNav li a:hover {
+	color: #e3872b;
+}
+#nav ul.subNav li a.currentPage {
+	color: #e3872b;
+}
+/* ------------------------------------ */
+/* CONTENT AREA */
+/* ------------------------------------ */
+/*  /////////////////// Home Page Photo */
+#mainPhoto img {
+	/*border: none;*/
+	/*height: 435px;*/
+	margin: 0 0 0 1px;
+	/*margin-bottom: 10px;*/
+	padding: 0;
+	/*padding-bottom: 2px;*/
+	background-color: #fff;
+	border-bottom: 2px solid #edc057;
+}
+#container {
+	float: left;
+	position: relative;
+	border: none;
+	width: 842px;
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+#container.home {
+	/*padding-top: 0;*/
+	background: #fff url(images/col-rt-bg-grey.gif) repeat-y 567px;
+}
+/*  //////////////////// inside = ONE COLUMN / internal pages w/ no sidebar  */
+#container.inside {
+	/*margin-top: 2px;*/
+}
+/*  //////////////////// inside2 = TWO COLUMN / internal pages w/ right sidebars - "col-rt"   */
+#container.inside2 {
+	/*margin-top: 2px;*/
+	background: #fff url(images/col-rt-bg-grey.gif) repeat-y 567px;
+}
+
+/*  //////////////////// HEADER / MASTHEAD / HEADLINE //////////////////// */
+div#container header {
+	padding-left: 40px;
+	height: 70px;
+	background: url(images/content-hdr-Arch-qrtr-rnd-840.png) no-repeat 1px 0;
+}
+	#container header h2 {
+		margin: 16px 0 0px 0;
+		float: left;
+		width: 490px;
+	}
+	#container header h3 {
+		float: left;
+		margin: 0;
+		margin: 20px 0 0 0;
+		padding: 0 0 0 18px;
+	}
+	#container header h3 a.booknow {
+		color: #fff; /*#e7d105;  mustard yellow - SPECIALS */
+		font-size: 34px;
+		font-weight: bold;
+		letter-spacing: .1em;
+		padding: 0;
+		text-transform: none;
+		text-decoration: none;
+		text-shadow: 0px 0px 3px #850007; /*#E0793B*/
+	}
+	#container header h3 a.booknow:hover {
+		/*color: #fff;  #f3e991 lighter yellow */
+		text-shadow: 0px 0px 13px #850007;
+	}
+/*  //////////////////// Left COLUMN / Main Content //////////////////// */
+#content {
+	float: left;
+	border: none;
+	margin: 0 0 0 0;
+	padding: 16px 0 0 42px;
+}
+#content.home {
+	width: 523px;
+	/*padding-right: 20px;*/
+	padding-bottom: 80px;
+}
+/*  //////////////////// Accommodations Pages, Attractions page - no sidebar / ONE COLUMN  */
+#content.inside {
+	width: 797px;
+	padding-bottom: 40px;
+}
+/*  //////////////////// formResponse page - no sidebar / ONE COLUMN  */
+#content p {
+	margin: 10px 0 0 0;
+}
+#content.inside ul {
+	margin: 6px 0 0 20px;
+	padding: 0 20px 0 10px;
+}
+/* ------------------------------------ */
+/*  Pages with Sidebar - TWO COLUMN - (Excluding Home Page) */
+/* ------------------------------------ */
+#content.inside2 {
+	width: 523px;
+	padding-bottom: 80px;
+}
+/*#content.inside2 p {
+	margin: 0 0 0 0;
+}*/
+#content.inside2 ul {
+	margin: 6px 0 0 20px;
+	padding: 0 20px 0 10px;
+	list-style: url(images/list-image-rtdblqt.gif);
+}
+#content.inside2 ul li {
+	margin-bottom: 10px;
+	padding-bottom: 0;
+}
+
+/* ------------------------------------ */
+/*  ACCOMMODATIONS PAGE : Cottage Description Divs */
+/* ------------------------------------ */
+#content.inside div.accomm,
+#content.inside section.accomm {
+	float: left;
+	margin: 10px 0 0 -12px;
+	padding: 0 0 12px 0;
+	background-color: rgb(240,240,220);  /* also change bgcolor on HR style-eight:after, line 300 +/-; */
+	border-radius: 8px;
+}
+#content.inside div.accomm div.pics {
+	float: left;
+	width: 528px;
+	margin: 0 0 10px 10px;
+}
+#content.inside div.accomm  p {
+	width: 480px;
+	margin: 0 20px 0 0;
+	padding-bottom: 10px;
+}
+#content.inside div.accomm .firstPara {
+	float: left;
+	padding-left: 22px;
+	width: 480px;
+	font-size: 18px;
+	color: #333;
+}
+#content.inside div.accomm aside {
+	float: right;
+	width: 242px;
+	/*padding-left: 8px;*/
+}
+#content.inside div.accomm aside p {
+	width: 210px;
+	font-size: 18px;
+	color: #333;
+}
+#content.inside div.accomm aside .details {
+	padding-top: 16px;
+}
+#content.inside div.accomm h5 {
+	margin: 10px 12px;
+	border-bottom: 2px dotted rgb(255,174,0); /*rgb(230,220,160)*/
+}
+#content.inside div.accomm aside h6 {
+	color: #c85355;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 18px;
+	margin: 0 0 6px 10px;
+	padding: 6px 0 0 0 ;
+}
+#content.inside div.accomm ul.cottageInfo {
+	margin: 0;
+	line-height: 28px;
+	padding: 0 6px 16px 24px;
+	border-radius: 6px;
+}
+#content.inside div.accomm hr {
+    clear: both;
+    border: 0;
+    height: 0;
+	/*border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);*/
+}
+#content.inside div.accomm hr.style-eight {
+    padding: 0;
+    border: none;
+    border-top: medium double #fff;
+    color: rgb(255,174,0);
+    text-align: center;
+    margin: 6px 28px 0 16px;
+}
+#content.inside div.accomm hr.style-eight:after {
+    content: "§";
+    display: inline-block;
+    position: relative; 
+    top: -0.7em;  
+    font-size: 1.0em;
+    padding: 0 0.5em;
+    background: rgb(240,240,210);
+}
+#content.inside div.accomm img {
+	float: left;
+	margin: 0 -2px -2px 0;
+	padding: 0 0 0 0;
+	border: 2px white solid;
+}
+#content.inside .noNum p {
+	
+}
+#content.inside2.amenities h5 {
+	margin: 22px 10px 0 0;
+}
+#content.inside2.amenities p:first-child {
+	font-size: 18px;
+}
+/* ------------------------------------ */
+/*  WHAT TO DO / ACTIVITIES pages - left column contains images, no text */
+/* ------------------------------------ */
+.clear {
+	clear: both;
+}
+#content.inside2.whatToDo {
+	margin: 0px;
+	padding-bottom: 0px;
+}
+#whatToDo2 {
+	float: left;
+	width: 523px;
+	margin: -20px 0px 0px 0px;
+	padding: -2px 0px 1px 0px;
+	background-color: #eee;
+}
+#whatToDo2 img {
+	margin: 0px 0px 0px 0px;
+	padding: 2px 2px 2px 0px;
+	background-color: #fff;
+}
+#whatToDo2 dl {
+	margin: 0;
+	padding: 0;
+	width: 523px;
+}
+#whatToDo2 dd {
+	margin: 0 0 -7px 0;
+	padding: 0;
+}
+#whatToDo2 dl.alt img {
+	float: right;
+	padding: 2px 0px 2px 2px;
+	margin: 1px 0px -2px 0px;
+}
+#whatToDo2 img.top {
+	margin-top: -2px;
+	padding-top: -2px;
+}
+#whatToDo2 img.bottom {
+	margin-bottom: -14px;
+	padding-bottom: -2px;
+}
+/* ------------------------------------ */
+/* Attractions  Page - 2 column */
+/* ------------------------------------ */
+#col1 {
+	float: left;
+}
+#col2 {
+	float: right;
+	padding-right: 60px;
+}
+#content.inside ul#attractList p a.backtotop {
+	float: left;
+	clear: both;
+}
+/* ------------------------------------ */
+/* TOUR MAP ?? */
+/* ------------------------------------ */
+#container #tour-map {
+	position: absolute;
+	top: 70px;
+	right: -20px;
+	/*float: right;*/
+	margin-top: 20px;
+	background-color: transparent;
+}
+#container #tour-map h6 {
+	margin-left: 34px;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	font-size: 18px;
+	width: 220px;
+}
+#container #tour-map h6 a {
+	color: rgb(50,130,150);
+	text-decoration: none;
+}
+/* ------------------------------------ */
+/*	   Image Container (no side margins/padding) */
+/*	   for Sidebar on the "inside2" pages  */
+/* ------------------------------------ */
+#col-rt {
+/*  Sidebar with no headline  */
+	float: right;
+	width: 272px;
+	margin: 0 3px 36px 0;
+	padding-top: 72px;
+}
+#col-rt-home {
+/*  Sidebar with headline and text below  */
+	float: right;
+	width: 272px;
+	margin: 300px 3px 36px 0;
+}
+#col-rt-pics {
+/*  Sidebar with headline, pics below  */
+	float: right;
+	width: 272px;
+	margin: 0 3px 36px 0;
+}
+#col-rt-todo {
+/*  Sidebar with headline and text below  */
+	float: right;
+	width: 272px;
+	margin: 0 3px 36px 0;
+}
+/* ------------------------------------ */
+/*	   Text Container / Sidebar */
+/* ------------------------------------ */
+#col-rt-text {
+	padding: 31px 19px 0px 19px;
+	width: 234px;
+}
+#col-rt-text p.last {
+	border-bottom: #ffffff solid 1px;
+	padding: 0px 0px 18px 0px;
+}
+#col-rt img.pics, #col-rt-pics img.pics {
+	margin-top: 20px;
+	background-color: #fff;
+	padding: 2px 0 2px 0;
+	display: block;
+}
+#col-rt img.icon {
+	margin: 10px 6px auto;
+	text-align: center;
+}
+/* ------------------------------------ */
+/* Social Media section */
+/* ------------------------------------ */
+div.facebook_box {
+	height: 32px;
+	width: 150px;
+	margin: 20px auto;
+	padding: 7px;
+	border: #f1f1f1 solid 1px;
+	border-bottom: #aaaaaa solid 1px;
+	background: #ededed;
+	color: #2c5f97;
+	font-family: Verdana;
+	font-weight: bold;
+}
+div.facebook_box a#facebook {
+	text-decoration: none;
+	color: #2c5f97;
+}
+img.fb_logo {
+	float: left;
+	margin-right: 10px;
+}
+div.fb_badge_text_small {
+	font-size: 13px;
+	line-height: 16px;
+}
+span.fb_badge_text_big {
+	font-size: 19px;
+	display: block;
+}
+/* ------------------------------------ */
+/* TRIP ADVISOR */
+/* ------------------------------------ */
+.trip {
+	/*margin: 20px auto;*/
+	padding: 7px 0 10px 30px;
+	/*border-top: #f1f1f1 solid 1px;*/
+}
+/* ------------------------------------ */
+/* CONSTANT CONTACT - inline styles */
+/* ------------------------------------ */
+#col-rt-text div.safe-sub {
+	margin: 4px auto 20px auto;
+	width: 172px;
+	/*height: 15px;*/
+	padding: 1px 1px 1px 1px;
+	background-color: #fff;
+	text-align: center;
+}
+/* ------------------------------------ */
+/* RECOMMENDED BY - in typography section */
+/* ------------------------------------ */
+#col-rt-text p.recommend {
+	border-top: 1px solid #ffffff;
+}
+/* ------------------------------------ */
+/* RESERVATIONS FORM - Not Currently Used!! */
+/* ------------------------------------ */
+form#regform {
+	padding: 0;
+}
+form#regform fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+/* background-color: #e1e1e1; */
+}
+form#regform ol {
+	float: left;
+	width: 100%;
+	padding-left: 30px;
+	margin: 10px 0 10px 0;
+	list-style: none;
+}
+form#regform ol li {
+	background-color: #EFF6ED;
+	padding: 0 0 0 8px;
+	margin: 0px 0 16px 0;
+	float: left;
+	clear: left;
+	width: 410px;
+	color: #754c24; /* light brown */
+}
+form#regform ol li label {
+	float: left;
+	width: 160px;
+	margin-right: 20px;
+	color: #754c24;
+}
+form#regform ol li input {
+	margin-bottom: 0;
+	margin-top: 0;
+	width: 220px;
+}
+form#regform ol li label.message {
+	width: 400px;
+	margin-bottom: 10px;
+}
+form#regform ol li textarea {
+	width: 390px;
+}
+form#regform ol li input.submit {
+	float: none;
+	width: auto;
+}
+form#regform ol li.submit1 {
+	width: 228px;
+	padding-left: 190px;
+}
+/* ---------------------------------------------------------------------------
+   FOOTER
+--------------------------------------------------------------------------- */
+div#footer {
+	clear: both;
+	width: 842px;
+	margin: 0; /*auto 0 auto*/
+	padding: 10px 0 0 0;
+}
+div#footer-inner {
+	background: #fff url(images/footer-alt.png) no-repeat top;
+	margin: 0 0 0 0;
+	padding: 8px 0 0 0;
+	/*background-color: #b9c3a9;*/
+}
+div#footer div#footer-inner-nobar {
+	background: #fff url(images/footer-alt.png) no-repeat top;
+	margin: 0 0 0 0;
+	padding: 6px 0 0 0;
+	/*background-color: #b9c3a9;*/
+}
+div#footer .address {
+	/*background-color: #b9c3a9;
+	background: url(images/ftr-border-bg2.gif) no-repeat bottom;*/
+	height: 130px;
+	margin: 0 0 0 0;
+	padding: 56px 50px 12px 50px;
+	text-align: center;
+}
+ul#nav-footer {
+	margin: 22px 0 0 0;
+	padding: 0;
+}
+ul#nav-footer li {
+	display: inline;
+	margin: 6px 6px 6px 0;
+	padding: 0;
+	list-style: none;
+}
+ul#nav-footer li a {
+	margin-left: 10px;
+	margin-right: 16px;
+}
+/* //// typography //// */
+div#footer .address p {
+	font: normal 13px/15px "Trebuchet MS", Arial, sans-serif;
+	color: #fff;
+	margin: 0 0 6px 0;
+}
+div#footer ul#nav-footer li, div#footer ul#nav-footer li a {
+	font-size: 11px;
+	font-family: Arial, sans-serif;
+	text-decoration: none;
+	color: #f9eca3; /* pale yellow */
+}
+div.address p a {
+	text-decoration: underline;
+	color: #fff;
+}
+/* ---------------------------------------------------------------------------
+   TYPOGRAPHY
+--------------------------------------------------------------------------- */
+#content h2, #container header h2 {
+	letter-spacing: 0.03em;
+	font-size: 38px;
+	font-weight: normal;
+	color: #754c24;	/* brown */ 
+	text-shadow: 1px 1px 2px #999;
+}
+#content p {
+	font-size: 16px;
+	line-height: 28px;
+	color: #3d3d3d; /* 75% black */
+}
+#content a {
+	color: #808080; /* 50% black */
+	/*color:#666666; 60% black */
+}
+#content a:hover {
+	color: #e3872b; /* orange */
+}
+#content.inside ul {
+	color: #3d3d3d;
+	list-style: url(images/list-image-rtdblqt.gif);
+	line-height: 24px;
+}
+/***  Home Page  ***/
+#content.home p.first:first-line {
+	font-size: 22px;
+	line-height: 30px
+}
+
+
+/***  Attactions List Page  ***/
+#content.inside ul#attractList h6 {
+	margin: 12px 0 0 0;
+	padding: 0;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: .2em;
+	color: #c85355; /* Red */
+}
+#content.inside ul#attractList li a {
+	margin: 0 6px 0 6px;
+	color: #6F755F; /*green*/
+}
+#content.inside ul#attractList li a:visited {
+	color: #B8C19E; /*nav lighter green-grey*/
+}
+#content.inside ul#attractList li a:hover {
+	color: #e3872b; /*nav orange*/
+}
+#content.inside ul#attractList p a.backtotop {
+	margin-left: -16px;
+	padding: 6px;
+	color: #CECECE;
+	font-size: smaller;
+	text-decoration: none;
+}
+#content.inside p.imgCaption {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #666666;
+}
+#content.inside div.accomm p.bigNumber {
+	float: left;
+	width: 48px;
+	font-size: 48px;
+	margin: 0 0 0 12px;
+	padding: 0 0 10px 10px;
+	color: rgb(255,174,0); /*rgb(230,220,160); dull yellow*/ /*#754c24; brown*/
+}
+.accomm p span.unitIntro {
+	/*font-weight: bold;*/
+	color: #c85355; /*light red*/
+	margin-right: 2px;
+	letter-spacing: .04em;
+}
+p span.intro {
+	/*font-weight: bold;*/
+	color: #c85355;	/* light red */
+	margin-right: 2px;
+	letter-spacing: .04em;
+}
+/* coloring the seasons words Need to work on colors...
+#content.inside2 h2 span.winter {
+	color: #fff;}
+#content.inside2 h2 span.fall {
+	color: #bf810a;}
+#content.inside2 h2 span.summer {
+	color: #829e1b;}
+#content.inside2 h2 span.spring {
+	color: #ec55a2;}
+*/
+#content.inside2 ul {
+	line-height: 24px;
+	color: #3d3d3d; /* 75% black */
+}
+#content.inside2 h5,#content.inside h5 {
+	margin: 10px 0;
+	padding-bottom: 2px;
+	font-size: 20px;
+	font-weight: normal; /*color: #754c24;  brown*/ 
+	/*color: #9a6530;  lighter brown*/
+	color: #c85355;	/* red */
+	/* background-color:rgb(244,244,200); */ 	/*background-color: rgb(249,249,230);*/
+	/* border-top:1px solid rgb(240, 230, 180); border-left:1px solid rgb(240, 230, 180); */
+	border-bottom: 2px dotted rgb(230, 220, 160)
+}
+#content.inside2 h5 a.insideLink, h5 a.insideLink:hover {
+	text-decoration: none;
+	color: #c85355;
+}
+/*** Press Pages ***/
+.small {
+	font-size: smaller;
+}
+#content.press h3 {
+	font-size: 20px;
+	font-weight: normal;
+	color: #c85355;	/*red Adirondack */
+	margin-top: 26px;
+	margin-bottom: 12px;
+}
+#content.press a h3 {
+	text-decoration: underline;
+}
+#content.press h4 {
+	font-size: 16px;
+	font-weight: normal;
+	color: #754c24;	/* brown */
+	margin-bottom: 12px;
+}
+#content.press h5 {
+	font-size: 12px;
+	font-weight: normal;
+	color: #754c24;	/* brown */
+	margin-bottom: 12px;
+}
+/***  Reservation Response Form Styling  ***/
+#formResponse {
+	margin: 40px 3px 60px -9px;
+	padding: 20px 120px 20px 56px;
+	background-color: #EFF6ED; /* very light grey */
+}
+#formResponse .fieldNameCSS, #formResponse .fieldValueCSS {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	line-height: 22px;
+	color: #754c24; /* light red-brown */
+}
+#formResponse .fieldValueCSS {
+	color: #4A0F08; /*  deep red  */
+}
+/***  Sidebar - All pages with sidebar text   ***/
+#col-rt-text h3 {
+	color: #ffffff; /*#e7d105;  mustard yellow - SPECIALS */
+	font-size: 34px;
+	font-weight: normal;
+	letter-spacing: .1em;
+	padding: 0;
+	text-transform: none;
+}
+
+#col-rt-text h3>a.specials {
+	color: #ffffff; /*#e7d105;  mustard yellow - SPECIALS!, BOOK NOW! */
+	text-decoration: none;
+	font-weight: normal;
+	text-shadow: 0px 0px 3px #850007;
+}
+#col-rt-text h3>a.specials:hover {
+	color: #f3e991; /* lighter yellow */
+	font-weight: normal;
+	text-shadow: 0px 0px 3px #850007;
+}
+#col-rt-text h4 {
+	color: #303030; /* 80% black */
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 16pt;
+	margin: 28px 0 6px 0;
+	padding: 0;
+}
+#col-rt-text.todo h4 {
+	color: #850007; /* deep red */
+}
+#col-rt-home h4 a {
+	color: #850007; /* deep red */
+}
+#col-rt-home h4 a:hover {
+	color: #E3872B; /* lighter yellow */
+}
+#col-rt-text p {
+	color: #3c513e; /* deep grey-green */
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 14pt;
+	margin: 4px 0 16px 0;
+	padding: 0;
+}
+#col-rt-text p.recommend {
+	padding-top: 18px;
+	color: #850007; /*deep red */
+}
+#col-rt-text p.recommend_name, #col-rt-text p.recommend_name a {
+	text-align: center;
+	color: #850007; /* deep red */
+	margin: 0 0 12px 0;
+	padding: 0;
+}
+#col-rt-text a {
+	font-weight: bold;
+	text-decoration: underline;
+	color: #6E996F; /*color: #4E7650; nav lighter green-grey*/
+}
+#col-rt-text a:hover {
+	font-weight: bold;
+	text-decoration: underline;
+	color: #4E7650; /*nav lighter green-grey*/
+}

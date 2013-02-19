@@ -1,0 +1,533 @@
+/*  Cottage Place  
+//  01-2010
+//  redroosterdesign
+*/
+
+html {
+/* 	background: #f0eca3 url(images/birch-bkg-yell-overlay.jpg); */
+}
+
+body {
+	height: 100%;
+	margin: 0 auto 0 auto;
+	padding: 0 0 0 0;
+	font-family: Georgia, Times, serif;
+	background-color: #fff;
+	background: url(images/edge-shadow-bg.png) repeat-y top;
+}
+
+img {
+	border: none;
+}
+
+#wrapper {
+	margin: 0 auto;
+	padding: 0 0 20px 0;
+	width: 842px;
+	background-color: #fff;
+	background-image: url(images/edge-shadow-bg.png) repeat-y top;
+	/* overflow: auto; */
+}
+
+/*  For Layout purposes only  */
+#wrapper.home {
+	/* background: #fff url(images/cottage3-comp-trans2.gif) no-repeat 0 0; */ }
+#wrapper.accom {
+	/* background: #fff url(images/accomm-comp.jpg) no-repeat 0 0; */ }
+
+#header {
+	background: #fff url(images/hdr-arch-bg.gif) no-repeat 0 0;
+	width: 842px;
+	height: 270px;
+	position: relative;
+}
+
+#logo {
+	position: absolute;
+	left: 78px;
+	top: 67px;
+	/* background: #fff url(images/logo-cp.gif) no-repeat 0 0; */
+}
+
+#header #logo h1 {
+	text-indent: -9999px;
+	font-size: 10px;
+}
+
+/******  NAVIGATION  ******/
+
+#nav {
+	margin: 0;
+	padding: 0;
+	background: #fff url(images/hdr-nav-bg.gif) no-repeat 0 0;
+	width: 842px;
+	height: 34px;
+	position: absolute;
+	bottom: 0;
+}
+
+#nav ul.mainNav {
+	margin: 8px 0 0 0;
+	padding: 0;
+	text-align: center;
+}
+
+#nav ul.mainNav li {
+	display: inline;
+	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #754c24;
+	list-style-type: none;
+}
+
+#nav ul.mainNav li a {
+	padding: 5px 14px 5px 14px;
+	text-decoration: none;
+	color: #754c24;
+}
+
+#nav ul.mainNav li a:hover {
+	color: #e3872b;
+}
+
+#nav ul.mainNav li a.currentPage {
+	color: #e3872b;
+}
+
+
+
+/******  SUB-NAV  ******/
+
+#subNav {
+	float: left;
+	/* padding: 0 0 0 0; */
+	width: 842px;
+	height:30px;
+	background: url(images/subnav-bg.gif) no-repeat 0 0;
+}
+
+	#subNav ul {
+		float: left;
+		padding: 0;
+		/* text-align: center; */
+		list-style: none;
+	}
+/* CHANGES FOR IE6 */
+	#subNav ul.subNavHome {
+		margin: 0 0 0 20px;
+	}
+
+	#subNav ul.subNavAccom {
+		margin: 0 0 0 45px;
+	}
+	
+	#subNav ul.subNavSpecial {
+		margin: 0 0 0 140px;
+	}
+	
+	#subNav ul.subNavReserv {
+		margin: 0 0 0 205px;
+	}
+	#subNav ul.subNavWhatToDo {
+		margin: 0 0 0 240px;
+	}
+		#subNav ul li {
+			float: left;
+			margin: 0;
+			padding: 0;
+			background-color: #fff;
+			border-top: 1px solid #e49f00;
+			font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+			font-size: 13px;
+			font-weight: bold;
+			/* color: #9a6530; */
+		}
+		
+			#subNav ul li a {
+				float: left;
+				/* margin: 0; */
+				padding: 5px 10px 4px 10px;
+				/* padding: 0; */
+				text-decoration: none;
+				color: #9a6530;
+			}
+			
+			#subNav ul li a:hover {
+				color: #e3872b;
+			} 
+
+			#subNav ul li a.currentPage {
+				color: #e3872b;
+			}
+			
+
+
+/******  CONTENT  ******/
+
+img.mainPhoto {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+			
+#container {
+	float: left;
+	border: none;
+	width: 842px;
+	margin: 0;
+	padding: 0;
+}
+
+	#container.home {
+		margin-top: -1px; /*fixing UNEXPLAINED margin below mainPhoto*/
+		/* background: #fff url(images/content-btm-lines.gif) no-repeat bottom; */
+		background: url(images/col-rt-bg-grey.gif) repeat-y 567px;
+		/* background-color: #fff; */
+	}
+	
+	/*  Accommodations page only - no sidebar  */
+	#container.inside {
+		margin-top: 2px;
+		/* background: url(images/content-btm-lines-inside.gif) no-repeat bottom; */
+	}
+	
+	/*  All other internal pages with right-hand sidebars  */
+	#container.inside2 {
+		margin-top: 2px;
+		background: url(images/col-rt-bg-grey.gif) repeat-y 567px;
+	}
+	
+#content {
+	float: left;
+	border: none;
+	margin: 0 0 0 0;
+	/*margin: -2px 3px 2px 3px;*/
+	padding: 0 0 0 50px;
+}
+
+	#content.home {
+		width: 496px;
+		padding-right: 20px;
+		background: url(images/content-hdr-home.gif) no-repeat 3px 0;
+	}
+	
+	/*  Accommodations Pages - no sidebar  */
+	#content.inside {
+		width: 792px;
+		padding-bottom: 80px;
+		background: url(images/content-hdr-accom.gif) no-repeat 3px 0;
+	}
+	
+		#content.inside .accomm img {
+			float: left;
+			margin: 0 3px 3px 0;
+			padding: 0;
+		}
+		
+		#content.inside .accomm {
+			float: left;
+			margin-top: 30px;
+			/* background: #fff url(images/accomDivBar.gif) repeat-x bottom; */
+		}
+		
+		#content.inside .accomm p {
+			width: 560px;
+			margin: 0 0 8px 70px;
+			padding: 0 0;
+			line-height: 24px;
+		}
+
+	/*  All other internal pages with Sidebar  */		
+	#content.inside2 {
+		width: 300px;
+		margin-bottom: 60px;
+		margin-right: 20px;
+		background: url(images/content-hdr-home.gif) no-repeat 3px 0;
+	}
+
+	#content.inside2 ul {
+		margin-left: 20px;
+		padding-left: 4px;
+	} 
+
+	#content.inside2 ul li {
+		margin-bottom: 10px;
+		padding-bottom: 0;
+	} 
+/*
+	#content.inside2 ul li ul.smallList li {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	} 
+*/
+
+/*  Image Container (no side margins/padding) for Sidebar on the "inside2" pages  */
+#col-rt {
+	margin: 0 3px 36px 0;
+	float: right;
+	background: url(images/content-hdr-home-rt-2.gif) no-repeat 0 0;
+}
+
+#col-rt.inside2 {
+	width: 266px;
+/* 	border-style: dashed; */
+}
+
+	/*  Text Container for Sidebar on the home page or "inside2" pages  */
+	#col-rt-text {
+		padding: 35px 19px 18px 19px;
+		width: 234px;
+		
+	}
+	
+	#col-rt img.pics {
+		margin-top: 28px;
+	}
+	
+	#col-rt img.icon {
+		margin: 10px 6px auto;
+		text-align: center;
+		/* margin-left: 61px; */
+	}
+	
+	#col-rt hr {
+		color: #fff;
+		background-color: #fff;
+		width: 100%;
+		height: .5px;
+	}
+	
+
+/******  RESERVATIONS FORM  ******/
+
+form#regform {
+	padding: 0;
+}
+
+form#regform fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+	/* background-color: #e1e1e1; */
+}
+
+form#regform ol {
+	float: left;
+	width: 100%;
+	padding-left: 30px;
+	margin: 10px 0 10px 0;
+	list-style: none;
+}
+
+form#regform ol li {
+	/* line-height: 28px; */
+	background-color: #f2f2f2;
+	padding: 2px 2px 2px 4px;
+	margin: 0px 0 16px 0;
+	float: left;
+	clear: left;
+	width: 400px;
+	color: #754c24; 
+}
+
+form#regform ol li label {
+	float: left;
+	width: 140px;
+	margin-right: 16px;
+	color: #754c24;
+}
+
+form#regform ol li input {
+	width: 220px;
+}
+
+form#regform ol li label.description {
+	width: 400px;
+	margin-bottom: 10px;
+}
+
+form#regform ol li textarea {
+	width: 390px;
+}
+
+form#regform ol li input.submit {
+	float: none;
+	width: auto;
+}
+
+form#regform ol li.submit1 {
+	width: 248px;
+	padding-left: 156px;
+}
+
+/******  FOOTER  ******/
+
+div#footer {
+	clear: both;
+	/* float: left; */
+	width: 842px;
+	/* margin: 30px 0 0 0; */
+	padding: 0 0 18px 0;
+	background: #fff url(images/ftr-line-btm.gif) no-repeat bottom;
+}
+
+	div#footer div#footer-inner {
+		background: #fff url(images/content-btm-lines.gif) no-repeat top;	
+		margin: 0 0 0 0;
+		padding: 6px 0 0 0 ;
+	}
+	
+	div#footer div#footer-inner-nobar {
+		background: #fff url(images/content-btm-lines-nobar.gif) no-repeat top;	
+		margin: 0 0 0 0;
+		padding: 6px 0 0 0 ;
+	}
+	
+	div#footer .address {
+		background-color: #909a81;
+		margin: 30px 3px 0 3px;
+		padding: 26px 50px 12px 50px;	
+		/* width: 736px; */
+	}
+	
+	ul#nav-footer {
+		/* float: left; */
+		/* height: 38px */
+		margin: 22px 0 0 0;
+		padding: 0;
+	}
+	
+	ul#nav-footer li {
+		/* float: left; */
+		display: inline;
+		margin: 6px 6px 6px 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	ul#nav-footer li a {
+		margin-left: 10px;
+		margin-right: 16px;
+	}
+	/*  to bring footer nav back in line on left margin - see above rule  */
+	ul#nav-footer li.first {
+		margin-left: -10px;
+	}
+
+
+/****** TYPOGRAPHY ******/
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: Georgia, Times, serif;
+}
+
+#content h2 {
+	margin: 20px 0 0 0;
+	margin-left: 0;
+	letter-spacing: .03em;
+	/* width: 420px; */
+	font-size: 38px;
+	font-weight: normal;
+	/* color: #754c24; */
+	color: #fff;
+}
+
+#content p {
+	margin-left: 0;
+	padding: 0 0 0 0;
+	font-size: 16px;
+	line-height: 28px;
+	color: #3d3d3d;
+}
+
+#content.inside2 h5 {
+	margin: 10px 0;
+	font-size: 18px;
+	font-weight: normal;
+	color: #754c24; }
+
+
+
+#content.inside p.bigNumber {
+	float: left;
+	width: 48px;
+	font-size: 48px;
+	margin: 0 20px 0 0;
+	color: #754c24;
+	height: 42px; }
+
+.accomm p span.unitIntro {
+	font-weight: bold;
+	color: #c85355;
+	margin-right: 10px;
+	letter-spacing: .04em; }
+
+p span.intro {
+	font-weight: bold;
+	color: #c85355;
+	margin-right: 5px;
+	letter-spacing: .04em; }
+
+#content.inside2 .internalLink {
+	text-decoration: none;
+	color: #9a6530;
+}
+
+#content.inside2 ul {
+	color: #3d3d3d;
+	list-style: url(images/list-image-rtdblqt.gif);
+	line-height: 24px;
+}
+
+#col-rt-text h3 {
+	color: #e7d105;
+	font-size: 22px;
+	font-weight: normal;
+	letter-spacing: .3em;
+	margin: 0 0 22px 0;
+}
+
+#col-rt-text h4 {
+	color: #303030;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 16pt;
+	margin: 12px 0 6px 0;
+	padding: 0;	
+}
+
+#col-rt-text p {
+	color: #3c513e;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 14pt;
+	margin: 4px 0 6px 0;
+	padding: 0;
+}
+
+#col-rt-text p.recommend {
+	color: #850007;
+}
+
+#col-rt-text p.recommend_name, #col-rt-text p.recommend_name a {
+	text-align: center;
+	color: #850007;
+	padding: 0;
+	margin: 0;
+}
+
+div#footer .address p {
+	font: normal 13px/15px "Trebuchet MS", Arial, sans-serif;
+	color: #fff;
+	margin: 0 0 6px 0; }
+
+div#footer ul#nav-footer li, div#footer ul#nav-footer li a {
+	font-size: 11px;
+	font-family: Arial, sans-serif;
+	text-decoration: none;
+	color: #f9eca3; }
+
+
